@@ -42,7 +42,11 @@
 		"minimap_border": "var(white)",
 		"accent": "var(magenta)",
 		"shadow": "var(bg_darker)",
-		"shadow_width": "10"
+		"shadow_width": "10",
+		"line_diff_width": "2",
+		"line_diff_added": "var(green)",
+		"line_diff_modified": "var(cyan)",
+		"line_diff_deleted": "var(magenta)"
 	},
 
 	"rules":
@@ -338,6 +342,22 @@
 		{
 			"scope": "halftone",
 			"foreground": "var(halftone)"
+		},
+		{
+			"scope": "diff.deleted",
+			"background": "var(selection)"
+		},
+		{
+			"scope": "diff.deleted.char",
+			"background": "var(selection)"
+		},
+		{
+			"scope": "diff.inserted",
+			"background": "var(selection)"
+		},
+		{
+			"scope": "diff.inserted.char",
+			"background": "var(selection)"
 		}
 	]
 }
